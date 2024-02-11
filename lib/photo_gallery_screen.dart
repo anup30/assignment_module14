@@ -122,6 +122,8 @@ class _PhotoGalleryScreenState extends State<PhotoGalleryScreen> {
       if (kDebugMode) {
         print("error: $e");
       }
+      isLoading = false;
+      setState(() {});
     }
   }
 }
